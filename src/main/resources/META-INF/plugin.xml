@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>pl.polsl.robost.pathfinder</id>
+    <name>Method call path finder</name>
+    <version>1.0</version>
+    <vendor email="robbostrowski@gmail.com" >Robert Ostrowski</vendor>
+    <change-notes>1.0</change-notes>
+    <description>Plugin for searching specific method call paths within a given namespace.</description>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Pathfinder call paths" anchor="bottom" factoryClass="pl.robost.pathfinder.gui.toolWindow.PathfinderToolWindowFactory"/>
+    </extensions>
+
+    <actions>
+        <action class="pl.robost.pathfinder.action.PathfinderAction" id="Pathfinder.findCallPaths" icon="/icons/logo.png">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
