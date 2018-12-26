@@ -1,4 +1,4 @@
-#Pathfinder - IntelliJ plugin
+# Pathfinder - IntelliJ plugin
 
 Plugin for IntelliJ used for finding call paths from given package to selected method
 
